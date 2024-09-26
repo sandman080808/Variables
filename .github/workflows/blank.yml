@@ -1,0 +1,63 @@
+   internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Random rnd = new Random();
+            int money = 0;
+            int reward = 10;
+            money += reward;
+            int accident = rnd.Next(1, 100);
+            if (accident <= 90)
+            {
+                Console.WriteLine("Сальная награда Сальным господам:" + reward);
+            }
+            else
+            {
+                Console.WriteLine("Сальная мошна полнеет и дамы начинают оглядываться, видимо на звон:" + reward);
+            }
+
+            int health = 100;
+            int enemyDamage = rnd.Next(1, 150);
+            health -= enemyDamage;
+            if (health == 0)
+            {
+                Console.WriteLine("Сальный парень не достигнув своей цели почтенно СДОХ:" + health);
+            }
+            else
+            {
+                Console.WriteLine("Сало разил противник!:" + health);
+            }
+
+            int damage = 5;
+            int critDamage = rnd.Next(5, 30);
+            damage += critDamage;
+            if (damage <= 25)
+            {
+                Console.WriteLine("-САЛООО ЗА ЧТООООО...." +damage);
+            }
+            else
+            {
+                Console.WriteLine("Саленёк, бьёшь больно но меня таким не пронять)" + damage);
+            }
+
+            int food = 100;
+            int foodInDay = 15;
+            int foodLess = 0;
+            int day = 0;
+            day++;
+            foodLess = food/foodInDay;
+            food -= foodInDay;
+            Console.WriteLine("С рождения Сального героя обречённого спасти этот бренный и заблудший мир прошло:" +day);
+            Console.WriteLine("Много жрёшь, даже для Сало:" +food);
+            Console.WriteLine("Еды осталось всего на:" +foodLess);
+
+            int manaPull = 100;
+            int manaCost = 30;
+            int maxSkills = 0;
+            maxSkills = manaPull / manaCost;
+            manaPull = maxSkills * manaCost;
+
+            Console.WriteLine("Салошник (чмошник) истратил всю ману на заклинания и у него осталось:" +manaPull);
+        }
+    }
+}
